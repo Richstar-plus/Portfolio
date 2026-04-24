@@ -2,11 +2,18 @@
   .hamburger {
     padding: 20px;
     position: fixed;
+    z-index: 2000;
+    transition: all 1s ease;
+  }
+
+  .hamburger-open {
+    left: 200px;
+    transition: all 1s ease;
   }
 
   .hamburger .hamburger-btn {
     border: none;
-    padding: 5px 10px ;
+    padding: 5px 10px;
     font-size: 23px;
     background-color: rgba(255, 255, 255, 0.068);
     border-radius: 4px;
@@ -14,5 +21,8 @@
     color: rgb(255, 115, 0);
     transition: 0.4s;
   }
-}
 
+  .hamburger .hamburger-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

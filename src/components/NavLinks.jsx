@@ -1,6 +1,12 @@
-import './NavLinks.css';
-import { NavLink } from 'react-router-dom';
-
+import "./NavLinks.css";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faUser,
+  faBriefcase,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 export function NavLinks() {
   return (
@@ -11,10 +17,29 @@ export function NavLinks() {
         <div className="logo-style-left"></div>
       </div>
       <div className="links">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/">
+          <div className="link-holder">
+            <FontAwesomeIcon icon={faHouse} /> Home
+          </div>
+        </NavLink>
+
+        <NavLink to="/about">
+          <div className="link-holder">
+            <FontAwesomeIcon icon={faUser} /> About
+          </div>
+        </NavLink>
+
+        <NavLink to="/projects">
+          <div className="link-holder">
+            <FontAwesomeIcon icon={faBriefcase} /> Projects
+          </div>
+        </NavLink>
+
+        <NavLink to="/contact">
+          <div className="link-holder">
+            <FontAwesomeIcon icon={faEnvelope} /> Contact
+          </div>
+        </NavLink>
       </div>
     </div>
   );

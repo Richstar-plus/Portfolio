@@ -3,3 +3,41 @@
   height: 100vh;
   padding: 10px;
 }
+
+.nav-links .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 40px 0;
+  position: relative;
+  font-family: "Pacifico", cursive;
+}
+
+.nav-links .logo h1 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.nav-links .logo .logo-style-right {
+  width: 15px;
+  height: 15px;
+  border-top: 4px solid;
+  border-right: 4px solid;
+  border-color: rgb(255, 115, 0);
+  position: absolute;
+  right: 0;
+  top: 0;
+  right: 30px;
+}
+
+.nav-links .logo .logo-style-left {
+  width: 15px;
+  height: 15px;
+  border-bottom: 4px solid;
+  border-left: 4px solid;
+  border-color: rgb(255, 115, 0);
+  position: absolute;
+  left: 27px;
+  bottom: -3px;
+}

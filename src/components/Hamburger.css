@@ -1,14 +1,13 @@
 @media (min-width: 390px) {
   .hamburger {
-    padding: 20px;
+    padding: 10px;
     position: fixed;
     z-index: 2000;
-    transition: all 1s ease;
+    transition: left 0.4s ease;
   }
 
   .hamburger-open {
     left: 200px;
-    transition: all 1s ease;
   }
 
   .hamburger .hamburger-btn {

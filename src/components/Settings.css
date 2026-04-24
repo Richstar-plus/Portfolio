@@ -5,18 +5,22 @@
   position: fixed;
   right: 10px;
   top: 80px;
+  z-index: 2000;
 }
 
 .settings .settings-theme {
   color: white;
   background-color: rgba(150, 150, 150, 0.123);
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: fixed;
+  top: 110px;
+  right: 20px;
 }
 
 .settings-colors {
@@ -26,16 +30,33 @@
   gap: 10px;
 }
 
-.settings .gear-holder {
-    color: white;
+ .gear-holder {
+  color: white;
   background-color: rgba(150, 150, 150, 0.123);
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: fixed;
+  right: 20px;
+  transition: right 0.4s ease;
+}
+
+.gear-holder-open {
+  color: white;
+  background-color: rgba(150, 150, 150, 0.123);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 125px;
 }
 
 .color-options {
@@ -48,6 +69,14 @@
   background-color: rgba(150, 150, 150, 0.123);
   border-radius: 5px;
   padding: 10px;
+  position: fixed;
+  right: -250px;
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+.color-options-open {
+  right: 0;
 }
 
 .color-heading {

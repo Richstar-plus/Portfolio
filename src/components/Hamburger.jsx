@@ -2,7 +2,7 @@ import './Hamburger.css'
 
 export function Hamburger({isNavOpen, setIsNavOpen}) {
   return (
-    <div className={`hamburger ${isNavOpen ? 'hamburger-open' : ''}`}>
+    <div className={`hamburger ${isNavOpen ? 'hamburger-open hamburger' : ''}`}>
       <button className="hamburger-btn" onClick={() => setIsNavOpen(!isNavOpen)}>
         {isNavOpen ? '✕' : '☰'}
       </button>

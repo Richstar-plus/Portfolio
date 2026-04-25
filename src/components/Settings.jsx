@@ -13,7 +13,7 @@ export function Settings({
     <div className="settings">
       <div className="settings-colors">
         <div
-          className={`${openTheme ? "gear-holder" : "gear-holder-dark"} ${openColors ? "gear-holder-open" : ""}`}
+          className={`${openTheme ? "gear-holder" : "gear-holder-dark"} ${openColors && openTheme === false ? "gear-holder-open gear-holder-open-dark" : ""}  ${openColors && openTheme === true ? "gear-holder-open gear-holder-open-dark" : ""} `}
           onClick={() => setOpenColors(!openColors)}
         >
           <FontAwesomeIcon icon={faGear} className="gear" />

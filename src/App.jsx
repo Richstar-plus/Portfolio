@@ -17,7 +17,6 @@ function App() {
 
   function handleThemeColor(color) {
     setThemeColor(color);
-    console.log(themColor);
   }
 
   return (
@@ -33,6 +32,7 @@ function App() {
             isNavOpen={isNavOpen}
             setIsNavOpen={setIsNavOpen}
             openTheme={openTheme}
+            themColor={themColor}
           />
           <Settings
             openColors={openColors}

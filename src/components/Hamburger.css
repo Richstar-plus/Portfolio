@@ -10,7 +10,7 @@
     left: 200px;
   }
 
-  .hamburger .hamburger-btn {
+  .hamburger .hamburger-btn-default {
     border: none;
     padding: 5px 10px;
     font-size: 23px;
@@ -21,7 +21,40 @@
     transition: 0.4s;
   }
 
-  .hamburger .hamburger-btn-light {
+  .hamburger .hamburger-btn-red {
+    border: none;
+    padding: 5px 10px;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #b32020;
+    transition: 0.4s;
+  }
+
+  .hamburger .hamburger-btn-green {
+    border: none;
+    padding: 5px 10px;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #3da02a;
+    transition: 0.4s;
+  }
+
+  .hamburger .hamburger-btn-blue {
+    border: none;
+    padding: 5px 10px;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #2c2caa;
+    transition: 0.4s;
+  }
+
+  .hamburger .hamburger-btn-light-default {
     border: none;
     padding: 5px 10px;
     font-size: 23px;
@@ -32,7 +65,41 @@
     transition: 0.4s;
   }
 
-  .hamburger .hamburger-btn:hover, .hamburger .hamburger-btn-light:hover {
+  .hamburger .hamburger-btn-light-red {
+    border: none;
+    padding: 5px 10px;
+    font-size: 23px;
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #b32020;
+    transition: 0.4s;
+  }
+
+    .hamburger .hamburger-btn-light-green {
+    border: none;
+    padding: 5px 10px;
+    font-size: 23px;
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #3da02a;
+    transition: 0.4s;
+  }
+
+  .hamburger .hamburger-btn-light-blue {
+    border: none;
+    padding: 5px 10px;
+    font-size: 23px;
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #2c2caa;
+    transition: 0.4s;
+  }
+
+  .hamburger .hamburger-btn:hover,
+  .hamburger .hamburger-btn-light:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
 }

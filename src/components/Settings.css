@@ -23,6 +23,21 @@
   right: 20px;
 }
 
+.settings-theme-dark {
+  color: rgb(0, 0, 0);
+  background-color: rgba(150, 150, 150, 0.308);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  top: 110px;
+  right: 20px;
+}
+
 .settings-colors {
   display: flex;
   justify-content: center;
@@ -45,9 +60,38 @@
   transition: right 0.4s ease;
 }
 
+.gear-holder-dark {
+  color: rgb(0, 0, 0);
+  background-color: rgba(150, 150, 150, 0.308);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  transition: right 0.4s ease;
+}
+
 .gear-holder-open {
   color: white;
   background-color: rgba(150, 150, 150, 0.123);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 125px;
+}
+
+.gear-holder-open-dark {
+  color: rgb(0, 0, 0);
+  background-color: rgba(150, 150, 150, 0.308);
   height: 35px;
   width: 35px;
   border-radius: 50%;

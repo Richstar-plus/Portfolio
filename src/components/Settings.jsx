@@ -13,7 +13,7 @@ export function Settings({
     <div className="settings">
       <div className="settings-colors">
         <div
-          className={`gear-holder ${openColors ? "gear-holder-open gear-holder" : ""}`}
+          className={`${openTheme ? "gear-holder" : "gear-holder-dark"} ${openColors ? "gear-holder-open" : ""}`}
           onClick={() => setOpenColors(!openColors)}
         >
           <FontAwesomeIcon icon={faGear} className="gear" />
@@ -46,7 +46,10 @@ export function Settings({
           </div>
         </div>
       </div>
-      <div className="settings-theme" onClick={() => handleThemeOpen()}>
+      <div
+        className={`${openTheme ? "settings-theme" : "settings-theme-dark"}`}
+        onClick={() => handleThemeOpen()}
+      >
         {openTheme ? (
           <FontAwesomeIcon icon={faSliders} className="sliders" />
         ) : (

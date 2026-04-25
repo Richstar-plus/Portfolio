@@ -7,6 +7,7 @@ export function Settings({
   setOpenColors,
   openTheme,
   handleThemeOpen,
+  handleThemeColor,
 }) {
   return (
     <div className="settings">
@@ -25,26 +26,27 @@ export function Settings({
             <div
               className="color-option"
               style={{ backgroundColor: "#b32020" }}
+              onClick={() => handleThemeColor("red")}
             />
             <div
               className="color-option"
               style={{ backgroundColor: "#3da02a" }}
+              onClick={() => handleThemeColor("green")}
             />
             <div
               className="color-option"
               style={{ backgroundColor: "#2c2caa" }}
+              onClick={() => handleThemeColor("blue")}
             />
             <div
               className="color-option"
               style={{ backgroundColor: "rgb(255, 115, 0)" }}
+              onClick={() => handleThemeColor("default")}
             />
           </div>
         </div>
       </div>
-      <div
-        className="settings-theme"
-       onClick={() => handleThemeOpen() }
-      >
+      <div className="settings-theme" onClick={() => handleThemeOpen()}>
         {openTheme ? (
           <FontAwesomeIcon icon={faSliders} className="sliders" />
         ) : (

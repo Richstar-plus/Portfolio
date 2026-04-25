@@ -9,23 +9,38 @@ function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [openColors, setOpenColors] = useState(false);
   const [openTheme, setOpenTheme] = useState(false);
+  const [themColor, setThemeColor] = useState("red");
 
-  function handleThemeOpen(){
-    setOpenTheme(prev => !prev);
+  function handleThemeOpen() {
+    setOpenTheme((prev) => !prev);
+  }
+
+  function handleThemeColor(color) {
+    setThemeColor(color);
+    console.log(themColor);
   }
 
   return (
     <BrowserRouter>
       <div className={`body ${openTheme ? "theme-dark" : "theme-light"}`}>
-        <NavLinks isNavOpen={isNavOpen} openTheme={openTheme} />
+        <NavLinks
+          isNavOpen={isNavOpen}
+          openTheme={openTheme}
+          themColor={themColor}
+        />
         <div className="main-body">
-          <Hamburger isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} openTheme={openTheme} />
+          <Hamburger
+            isNavOpen={isNavOpen}
+            setIsNavOpen={setIsNavOpen}
+            openTheme={openTheme}
+          />
           <Settings
             openColors={openColors}
             setOpenColors={setOpenColors}
             openTheme={openTheme}
             setOpenTheme={setOpenTheme}
             handleThemeOpen={handleThemeOpen}
+            handleThemeColor={handleThemeColor}
           />
         </div>
       </div>

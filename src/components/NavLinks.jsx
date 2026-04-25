@@ -8,35 +8,37 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
-export function NavLinks({ isNavOpen, openTheme }) {
+export function NavLinks({ isNavOpen, openTheme, themColor }) {
   return (
-    <div className={` ${isNavOpen ? "show-menu" : ""} ${openTheme ? "nav-links" : "nav-links-light"}`}>
+    <div
+      className={` ${isNavOpen ? "show-menu" : ""} ${openTheme ? "nav-links" : "nav-links-light"}`}
+    >
       <div className="logo">
-        <div className="logo-style-right"></div>
+        <div className={`logo-style-right logo-style-right-${themColor}`}></div>
         <h1>Richstar</h1>
-        <div className="logo-style-left"></div>
+        <div className={`logo-style-left logo-style-left-${themColor}`}></div>
       </div>
       <div className="links">
         <NavLink to="/">
-          <div className="link-holder">
+          <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faHouse} /> Home
           </div>
         </NavLink>
 
         <NavLink to="/about">
-          <div className="link-holder">
+          <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faUser} /> About
           </div>
         </NavLink>
 
         <NavLink to="/projects">
-          <div className="link-holder">
+          <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faBriefcase} /> Projects
           </div>
         </NavLink>
 
         <NavLink to="/contact">
-          <div className="link-holder">
+          <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faEnvelope} /> Contact
           </div>
         </NavLink>

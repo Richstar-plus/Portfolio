@@ -3,12 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: rgb(17, 17, 17);
 }
 
 .body {
   display: flex;
-  margin: 0 10px 10px 0;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-dark {
+  background-color: rgb(17, 17, 17);
+  color: white;
+}
+
+.theme-light {
+  background-color: rgb(248, 255, 255);
+  color: black;
 }
 
 .main-body {

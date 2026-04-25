@@ -21,7 +21,18 @@
     transition: 0.4s;
   }
 
-  .hamburger .hamburger-btn:hover {
+  .hamburger .hamburger-btn-light {
+    border: none;
+    padding: 5px 10px;
+    font-size: 23px;
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(180, 88, 13);
+    transition: 0.4s;
+  }
+
+  .hamburger .hamburger-btn:hover, .hamburger .hamburger-btn-light:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
 }

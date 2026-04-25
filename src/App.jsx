@@ -7,14 +7,26 @@ import { Settings } from "./components/Settings";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [openColors, setOpenColors] = useState(false);
+  const [openTheme, setOpenTheme] = useState(false);
+
+  function handleThemeOpen(){
+    setOpenTheme(prev => !prev);
+  }
 
   return (
     <BrowserRouter>
-      <div className="body">
-        <NavLinks isNavOpen={isNavOpen} />
+      <div className={`body ${openTheme ? "theme-dark" : "theme-light"}`}>
+        <NavLinks isNavOpen={isNavOpen} openTheme={openTheme} />
         <div className="main-body">
-          <Hamburger isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-          <Settings />
+          <Hamburger isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} openTheme={openTheme} />
+          <Settings
+            openColors={openColors}
+            setOpenColors={setOpenColors}
+            openTheme={openTheme}
+            setOpenTheme={setOpenTheme}
+            handleThemeOpen={handleThemeOpen}
+          />
         </div>
       </div>
     </BrowserRouter>

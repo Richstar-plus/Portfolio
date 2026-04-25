@@ -1,9 +1,9 @@
 import './Hamburger.css'
 
-export function Hamburger({isNavOpen, setIsNavOpen}) {
+export function Hamburger({isNavOpen, setIsNavOpen, openTheme}) {
   return (
     <div className={`hamburger ${isNavOpen ? 'hamburger-open hamburger' : ''}`}>
-      <button className="hamburger-btn" onClick={() => setIsNavOpen(!isNavOpen)}>
+      <button className={`${openTheme ? 'hamburger-btn' : 'hamburger-btn-light'}`} onClick={() => setIsNavOpen(!isNavOpen)}>
         {isNavOpen ? '✕' : '☰'}
       </button>
     </div>

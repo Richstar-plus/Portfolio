@@ -8,9 +8,9 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
-export function NavLinks({ isNavOpen }) {
+export function NavLinks({ isNavOpen, openTheme }) {
   return (
-    <div className={`nav-links ${isNavOpen ? "show-menu" : ""}`}>
+    <div className={` ${isNavOpen ? "show-menu" : ""} ${openTheme ? "nav-links" : "nav-links-light"}`}>
       <div className="logo">
         <div className="logo-style-right"></div>
         <h1>Richstar</h1>

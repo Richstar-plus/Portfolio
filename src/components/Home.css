@@ -66,7 +66,7 @@
 
   .home-picture-banner {
     margin-top: 40px;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -86,26 +86,64 @@
   }
 
   .hero-border-right-style {
-    border-top: 4px solid rgb(255, 115, 0);
-    border-right: 4px solid rgb(255, 115, 0);
+    border-top: 4px solid;
+    border-right: 4px solid;
     width: 50px;
     height: 50px;
     position: absolute;
     right: 70px;
     top: 10px;
+    transition: border-color 0.5s ease;
   }
 
   .hero-border-left-style {
-    border-left: 4px solid rgb(255, 115, 0);
-    border-bottom: 4px solid rgb(255, 115, 0);
+    border-left: 4px solid;
+    border-bottom: 4px solid;
     width: 50px;
     height: 50px;
     position: absolute;
     left: 40px;
     bottom: -20px;
+    transition: border-color 0.5s ease;
+  }
+
+  .border-hide {
+    display: none;
   }
 
   /* theme colors */
+
+  .border-theme-color-default {
+    border-color: rgb(255, 115, 0);
+  }
+
+  .border-theme-color-default:hover {
+    border-color: rgba(192, 99, 22, 0.8);
+  }
+
+  .border-theme-color-red {
+    border-color: #b32020;
+  }
+
+  .border-theme-color-red:hover {
+    border-color: #8b1b1b;
+  }
+
+  .border-theme-color-green {
+    border-color: #3da02a;
+  }
+
+  .border-theme-color-green:hover {
+    border-color: #2e6d1b;
+  }
+
+  .border-theme-color-blue {
+    border-color: #2c2caa;
+  }
+
+  .border-theme-color-blue:hover {
+    border-color: #1f1f6b;
+  }
 
   .theme-color-default {
     color: rgb(255, 115, 0);

@@ -29,11 +29,15 @@ export function Home({ themColor, isNavOpen }) {
           </button>
         </div>
         <div className="home-picture-banner">
-          <div className="hero-border-right-style"></div>
+          <div
+            className={`hero-border-right-style ${`border-theme-color-${themColor}`} ${isNavOpen ? "border-hide" : ""}`}
+          ></div>
           <div className="hero-container">
             <img src={heroImage} alt="Hero" />
           </div>
-          <div className="hero-border-left-style"></div>
+          <div
+            className={`hero-border-left-style ${`border-theme-color-${themColor}`} ${isNavOpen ? "border-hide" : ""}`}
+          ></div>
         </div>
       </div>
     </div>

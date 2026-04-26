@@ -159,9 +159,19 @@
     border-bottom: 1px solid rgb(255, 115, 0);
   }
 
+  .nav-links-light .link-holder-default:hover,
+  .link-holder-default:hover {
+    color: rgb(255, 115, 0);
+  }
+
   .nav-links-light .link-holder-red,
   .link-holder-red {
     border-bottom: 1px solid #b32020;
+  }
+
+  .nav-links-light .link-holder-red:hover,
+  .link-holder-red:hover {
+    color: #b32020;
   }
 
   .nav-links-light .link-holder-green,
@@ -169,13 +179,23 @@
     border-bottom: 1px solid #3da02a;
   }
 
+  .nav-links-light .link-holder-green:hover,
+  .link-holder-green:hover {
+    color: #3da02a;
+  }
+
   .nav-links-light .link-holder-blue,
   .link-holder-blue {
     border-bottom: 1px solid #2c2caa;
   }
 
-  .link-holder:hover,
+  .nav-links-light .link-holder-blue:hover,
+  .link-holder-blue:hover {
+    color: #2c2caa;
+  }
+
+  /* .link-holder:hover,
   .nav-links-light .link-holder:hover {
     color: rgb(255, 115, 0);
-  }
+  } */
 }

@@ -8,8 +8,8 @@ import { Settings } from "./components/Settings";
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [openColors, setOpenColors] = useState(false);
-  const [openTheme, setOpenTheme] = useState(false);
-  const [themColor, setThemeColor] = useState("red");
+  const [openTheme, setOpenTheme] = useState(true);
+  const [themColor, setThemeColor] = useState("default");
 
   function handleThemeOpen() {
     setOpenTheme((prev) => !prev);

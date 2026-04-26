@@ -1,10 +1,9 @@
 import "./Home.css";
 
-export function Home({ themColor }) {
-  console.log(themColor);
+export function Home({ themColor, isNavOpen }) {
   return (
     <div className="home">
-      <div className="main-body-holder">
+      <div className={`${isNavOpen ? "main-body-holder-closed" : "main-body-holder"}`}>
         <div className="home-content-holder">
           <h1 className="home-title">
             Hello, my name is{" "}

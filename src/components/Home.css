@@ -7,30 +7,42 @@
     flex-direction: column;
     margin-top: 100px;
     font-family: "Poppins", sans-serif;
+    transition: margin-left 0.3s ease;
   }
 
-  .main-body-holder .home-title {
+  .main-body-holder-closed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 170px;
+    width: 160px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .main-body-holder .home-title, .main-body-holder-closed .home-title {
     font-size: 20px;
     margin-bottom: 20px;
     width: 88%;
   }
 
-  .main-body-holder .home-title span {
+  .main-body-holder .home-title span, .main-body-holder-closed .home-title span {
     font-family: "Pacifico", cursive;
     font-size: 15px;
     transition: color 0.5s ease;
   }
 
-  .main-body-holder h2 {
+  .main-body-holder h2, .main-body-holder-closed h2 {
     font-size: 25px;
     margin-bottom: 20px;
   }
 
-  .main-body-holder h2 span {
+  .main-body-holder h2 span, .main-body-holder-closed h2 span {
     transition: color 0.5s ease;
   }
 
-  .main-body-holder .home-description {
+  .main-body-holder .home-description, .main-body-holder-closed .home-description {
     width: 88%;
     font-size: 14px;
     margin-bottom: 20px;

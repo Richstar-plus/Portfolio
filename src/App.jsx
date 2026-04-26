@@ -43,7 +43,7 @@ function App() {
             handleThemeOpen={handleThemeOpen}
             handleThemeColor={handleThemeColor}
           />
-          <Home />
+          <Home  themColor={themColor}/>
         </div>
       </div>
     </BrowserRouter>

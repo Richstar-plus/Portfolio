@@ -4,6 +4,7 @@ import { NavLinks } from "./components/NavLinks";
 import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 import { Settings } from "./components/Settings";
+import { Home } from "./components/Home";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -42,6 +43,7 @@ function App() {
             handleThemeOpen={handleThemeOpen}
             handleThemeColor={handleThemeColor}
           />
+          <Home />
         </div>
       </div>
     </BrowserRouter>

@@ -1,0 +1,56 @@
+@media (min-width: 390px) {
+  .home {
+    padding: 30px;
+  }
+  .main-body-holder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .main-body-holder .home-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 88%;
+  }
+
+  .main-body-holder .home-title span {
+    color: rgb(255, 115, 0);
+    font-family: "Pacifico", cursive;
+    font-size: 15px;
+  }
+
+  .main-body-holder h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .main-body-holder h2 span {
+    color: rgb(255, 115, 0);
+  }
+
+  .main-body-holder .home-description {
+    width: 88%;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .home-picture-banner {
+    display: none;
+  }
+
+  .home-button {
+    padding: 10px 25px;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 480px) {
+}

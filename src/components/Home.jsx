@@ -1,9 +1,12 @@
 import "./Home.css";
+import heroImage from "../images/heroImage.png";
 
 export function Home({ themColor, isNavOpen }) {
   return (
     <div className="home">
-      <div className={`${isNavOpen ? "main-body-holder-closed" : "main-body-holder"}`}>
+      <div
+        className={`${isNavOpen ? "main-body-holder-closed" : "main-body-holder"}`}
+      >
         <div className="home-content-holder">
           <h1 className="home-title">
             Hello, my name is{" "}
@@ -25,7 +28,13 @@ export function Home({ themColor, isNavOpen }) {
             More about me
           </button>
         </div>
-        <div className="home-picture-banner"></div>
+        <div className="home-picture-banner">
+          <div className="hero-border-right-style"></div>
+          <div className="hero-container">
+            <img src={heroImage} alt="Hero" />
+          </div>
+          <div className="hero-border-left-style"></div>
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-@media (min-width: 390px) {
+@media ((min-width: 390px)) {
   .home {
     padding: 30px;
   }
@@ -21,36 +21,37 @@
     transition: all 0.3s ease;
   }
 
-  .main-body-holder .home-title, .main-body-holder-closed .home-title {
+  .main-body-holder .home-title,
+  .main-body-holder-closed .home-title {
     font-size: 20px;
     margin-bottom: 20px;
     width: 88%;
   }
 
-  .main-body-holder .home-title span, .main-body-holder-closed .home-title span {
+  .main-body-holder .home-title span,
+  .main-body-holder-closed .home-title span {
     font-family: "Pacifico", cursive;
     font-size: 15px;
     transition: color 0.5s ease;
   }
 
-  .main-body-holder h2, .main-body-holder-closed h2 {
+  .main-body-holder h2,
+  .main-body-holder-closed h2 {
     font-size: 25px;
     margin-bottom: 20px;
   }
 
-  .main-body-holder h2 span, .main-body-holder-closed h2 span {
+  .main-body-holder h2 span,
+  .main-body-holder-closed h2 span {
     transition: color 0.5s ease;
   }
 
-  .main-body-holder .home-description, .main-body-holder-closed .home-description {
+  .main-body-holder .home-description,
+  .main-body-holder-closed .home-description {
     width: 88%;
     font-size: 14px;
     margin-bottom: 20px;
     text-align: justify;
-  }
-
-  .home-picture-banner {
-    display: none;
   }
 
   .home-button {
@@ -63,9 +64,50 @@
     transition: background-color 0.5s ease;
   }
 
+  .home-picture-banner {
+    margin-top: 40px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+  }
+
+  .hero-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .hero-border-right-style {
+    border-top: 4px solid rgb(255, 115, 0);
+    border-right: 4px solid rgb(255, 115, 0);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 70px;
+    top: 10px;
+  }
+
+  .hero-border-left-style {
+    border-left: 4px solid rgb(255, 115, 0);
+    border-bottom: 4px solid rgb(255, 115, 0);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 40px;
+    bottom: -20px;
+  }
+
   /* theme colors */
 
-  .theme-color-default{
+  .theme-color-default {
     color: rgb(255, 115, 0);
   }
 
@@ -128,7 +170,4 @@
   .home-content-holder .button-theme-color-blue:hover {
     background-color: #1f1f6b;
   }
-}
-
-@media (min-width: 480px) {
 }

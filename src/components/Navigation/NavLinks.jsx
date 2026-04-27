@@ -24,7 +24,7 @@ export function NavLinks() {
       <div className="links">
         <NavLink
           to="/"
-          className={({ isActive }) => isActive ? "nav-link-active" : ""}
+          className={({ isActive }) => (isActive ? "nav-link-active" : "")}
         >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faHouse} /> Home
@@ -33,7 +33,7 @@ export function NavLinks() {
 
         <NavLink
           to="/about"
-          className={({ isActive }) => isActive ? "nav-link-active" : ""}
+          className={({ isActive }) => (isActive ? "nav-link-active" : "")}
         >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faUser} /> About
@@ -42,7 +42,7 @@ export function NavLinks() {
 
         <NavLink
           to="/projects"
-          className={({ isActive }) => isActive ? "nav-link-active" : ""}
+          className={({ isActive }) => (isActive ? "nav-link-active" : "")}
         >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faBriefcase} /> Projects
@@ -51,7 +51,7 @@ export function NavLinks() {
 
         <NavLink
           to="/contact"
-          className={({ isActive }) => isActive ? "nav-link-active" : ""}
+          className={({ isActive }) => (isActive ? "nav-link-active" : "")}
         >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faEnvelope} /> Contact

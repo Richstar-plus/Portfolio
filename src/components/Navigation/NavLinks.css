@@ -146,6 +146,27 @@
     color: rgb(255, 115, 0);
   }
 
+  /* Active link styles */
+  .nav-link-active .link-holder-default {
+    color: rgb(255, 115, 0);
+    border-bottom-color: rgb(255, 115, 0);
+  }
+
+  .nav-link-active .link-holder-red {
+    color: #b32020;
+    border-bottom-color: #b32020;
+  }
+
+  .nav-link-active .link-holder-green {
+    color: #3da02a;
+    border-bottom-color: #3da02a;
+  }
+
+  .nav-link-active .link-holder-blue {
+    color: #2c2caa;
+    border-bottom-color: #2c2caa;
+  }
+
   .link-holder,
   .nav-links-light .link-holder {
     display: flex;
@@ -193,3 +214,4 @@
   .link-holder-blue:hover {
     color: #2c2caa;
   }
+}

@@ -12,6 +12,10 @@
     transition: margin-left 0.3s ease;
   }
 
+  .home-content-holder {
+    margin-left: 30px;
+  }
+
   .main-body-holder-closed {
     display: flex;
     flex-direction: column;
@@ -198,3 +202,4 @@
   .home-content-holder .button-theme-color-green {
     background-color: #3da02a;
   }
+}

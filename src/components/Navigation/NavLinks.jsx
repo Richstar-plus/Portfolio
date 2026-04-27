@@ -22,25 +22,37 @@ export function NavLinks() {
         <div className={`logo-style-left logo-style-left-${themColor}`}></div>
       </div>
       <div className="links">
-        <NavLink to="/">
+        <NavLink
+          to="/"
+          className={({ isActive }) => isActive ? "nav-link-active" : ""}
+        >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faHouse} /> Home
           </div>
         </NavLink>
 
-        <NavLink to="/about">
+        <NavLink
+          to="/about"
+          className={({ isActive }) => isActive ? "nav-link-active" : ""}
+        >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faUser} /> About
           </div>
         </NavLink>
 
-        <NavLink to="/projects">
+        <NavLink
+          to="/projects"
+          className={({ isActive }) => isActive ? "nav-link-active" : ""}
+        >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faBriefcase} /> Projects
           </div>
         </NavLink>
 
-        <NavLink to="/contact">
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => isActive ? "nav-link-active" : ""}
+        >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faEnvelope} /> Contact
           </div>

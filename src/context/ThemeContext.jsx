@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useState } from "react";
 
 export const ThemeContext = createContext();
 
@@ -6,7 +6,7 @@ export function ThemeProvider({ children }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [openColors, setOpenColors] = useState(false);
   const [openTheme, setOpenTheme] = useState(true);
-  const [themColor, setThemeColor] = useState('default');
+  const [themColor, setThemeColor] = useState("default");
 
   const handleThemeOpen = () => {
     setOpenTheme((prev) => !prev);
@@ -30,8 +30,6 @@ export function ThemeProvider({ children }) {
   };
 
   return (
-    <ThemeContext.Provider value={value}>
-      {children}
-    </ThemeContext.Provider>
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );
 }

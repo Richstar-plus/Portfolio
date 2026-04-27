@@ -10,8 +10,8 @@ export function AboutPage() {
         About <span className={`theme-color-${themColor}`}>Me</span>
       </h1>
       <p className="about-content">
-        Welcome to my portfolio! I'm a passionate web developer with expertise in
-        modern web technologies.
+        Welcome to my portfolio! I'm a passionate web developer with expertise
+        in modern web technologies.
       </p>
       {/* Add your about content here */}
     </div>

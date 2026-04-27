@@ -5,6 +5,7 @@ After the restructuring, the following old files can be safely deleted as they'v
 ## Files to Delete (Safe to Remove)
 
 ### In `src/components/`:
+
 - `Hamburger.jsx` → Moved to `src/components/Navigation/Hamburger.jsx`
 - `Hamburger.css` → Moved to `src/components/Navigation/Hamburger.css`
 - `NavLinks.jsx` → Moved to `src/components/Navigation/NavLinks.jsx`
@@ -33,6 +34,7 @@ Remove-Item Home.css
 ```
 
 Or simply delete them manually in VS Code File Explorer by:
+
 1. Right-click on each file in `src/components/`
 2. Click "Delete" or press Delete key
 3. Confirm deletion
@@ -40,6 +42,7 @@ Or simply delete them manually in VS Code File Explorer by:
 ## What to Keep
 
 ✅ All new structure files in:
+
 - `src/components/Navigation/`
 - `src/components/Layout/`
 - `src/pages/`
@@ -50,6 +53,7 @@ Or simply delete them manually in VS Code File Explorer by:
 ## Verify Everything Works
 
 After cleanup, run:
+
 ```powershell
 npm run dev
 ```
@@ -62,8 +66,8 @@ After deleting old files, you can optionally simplify imports in your code if ne
 
 ```jsx
 // Instead of:
-import { useTheme } from '../hooks/useTheme'
+import { useTheme } from "../hooks/useTheme";
 
 // Use:
-import { useTheme } from '../hooks'
+import { useTheme } from "../hooks";
 ```

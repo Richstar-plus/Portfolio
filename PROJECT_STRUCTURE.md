@@ -53,11 +53,13 @@ src/
 ## Key Improvements
 
 ### 1. **State Management with Context API**
+
 - Centralized theme state using `ThemeContext`
 - Eliminates prop drilling
 - Easy to access theme/color from any component using the `useTheme` hook
 
 ### 2. **Component Organization**
+
 - **Navigation Components**: Grouped together in `Navigation/` folder
   - Hamburger, NavLinks, Settings
   - Focused on navigation/header functionality
@@ -69,15 +71,18 @@ src/
   - ContactPage (new, ready to be filled)
 
 ### 3. **Custom Hooks**
+
 - `useTheme()`: Provides access to theme context
 - Can be used in any component to get/set theme, colors, and nav state
 
 ### 4. **Routing Setup**
+
 - React Router configured in App.jsx
 - Routes for Home, About, Projects, and Contact pages
 - NavLinks component handles navigation
 
 ### 5. **Barrel Exports**
+
 - Each folder has an `index.js` for cleaner imports
 - Example: `import { useTheme } from './hooks'` instead of `import { useTheme } from './hooks/useTheme'`
 
@@ -86,11 +91,11 @@ src/
 ### Using the Theme Hook in Components
 
 ```jsx
-import { useTheme } from '../hooks';
+import { useTheme } from "../hooks";
 
 export function MyComponent() {
   const { themColor, openTheme, setThemeColor } = useTheme();
-  
+
   return (
     <div className={`theme-color-${themColor}`}>
       {/* Your component content */}

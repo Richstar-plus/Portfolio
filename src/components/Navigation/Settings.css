@@ -1,0 +1,148 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  right: 10px;
+  top: 80px;
+  z-index: 2000;
+}
+
+.settings .settings-theme {
+  color: white;
+  background-color: rgba(150, 150, 150, 0.123);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  top: 110px;
+  right: 20px;
+}
+
+.settings-theme-dark {
+  color: rgb(0, 0, 0);
+  background-color: rgba(150, 150, 150, 0.308);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  top: 110px;
+  right: 20px;
+}
+
+.settings-colors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+ .gear-holder {
+  color: white;
+  background-color: rgba(150, 150, 150, 0.123);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  transition: right 0.4s ease;
+}
+
+.gear-holder-dark {
+  color: rgb(0, 0, 0);
+  background-color: rgba(150, 150, 150, 0.308);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  transition: right 0.4s ease;
+}
+
+.gear-holder-open {
+  color: white;
+  background-color: rgba(150, 150, 150, 0.123);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 125px;
+}
+
+.gear-holder-open-dark {
+  color: rgb(0, 0, 0);
+  background-color: rgba(150, 150, 150, 0.308);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  right: 125px;
+}
+
+.color-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 120px;
+  background-color: rgba(150, 150, 150, 0.123);
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  right: -250px;
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+.color-options-open {
+  right: 0;
+}
+
+.color-heading {
+  font-size: 14px;
+  color: white;
+}
+
+.color-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.color-options .color-option {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.settings .gear,
+.settings .sliders {
+  font-size: 20px;
+}

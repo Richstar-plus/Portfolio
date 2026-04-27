@@ -1,0 +1,20 @@
+/* Contact Page Styles */
+.contact {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.page-title span {
+  transition: color 0.5s ease;
+}
+
+.contact-content {
+  font-size: 16px;
+  line-height: 1.6;
+  width: 88%;
+}

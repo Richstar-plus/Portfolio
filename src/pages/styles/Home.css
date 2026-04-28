@@ -52,18 +52,18 @@
     transition: color 0.5s ease;
   }
 
-  .main-body-holder h2 {
+  .main-body-holder .home-subtitle {
     font-size: 25px;
     margin-bottom: 20px;
   }
 
-  .main-body-holder-closed h2 {
+  .main-body-holder-closed .home-subtitle {
     font-size: 15px;
     margin-bottom: 20px;
   }
 
-  .main-body-holder h2 span,
-  .main-body-holder-closed h2 span {
+  .main-body-holder .home-subtitle span,
+  .main-body-holder-closed .home-subtitle span {
     transition: color 0.5s ease;
   }
 
@@ -387,5 +387,6 @@
 @media (min-width: 1250px) {
   .home-content-holder {
     margin-left: 230px;
+    padding-right: 100px;
   }
 }

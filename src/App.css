@@ -33,6 +33,22 @@ body {
   box-sizing: border-box;
 }
 
+.border-theme-color-red {
+  border: 2px solid #b32020;
+}
+
+.border-theme-color-green {
+  border: 2px solid #3da02a;
+}
+
+.border-theme-color-blue {
+  border: 2px solid #2c2caa;
+}
+
+.border-theme-color-default {
+  border: 2px solid rgb(180, 88, 13);
+}
+
 @media (min-width: 390px) {
 }
 

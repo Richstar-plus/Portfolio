@@ -6,7 +6,7 @@
   .main-body-holder {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
     font-family: "Poppins", sans-serif;
     transition: margin-left 0.3s ease;
   }
@@ -159,6 +159,8 @@
   .hero-border-right-style {
     border-top: 4px solid;
     border-right: 4px solid;
+    border-bottom: none;
+    border-left: none;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -170,6 +172,8 @@
   .main-body-holder-closed .hero-border-right-style {
     border-top: 4px solid;
     border-right: 4px solid;
+    border-bottom: none;
+    border-left: none;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -181,6 +185,8 @@
   .hero-border-left-style {
     border-left: 4px solid;
     border-bottom: 4px solid;
+    border-top: none;
+    border-right: none;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -192,6 +198,8 @@
   .main-body-holder-closed .hero-border-left-style {
     border-left: 4px solid;
     border-bottom: 4px solid;
+    border-top: none;
+    border-right: none;
     width: 20px;
     height: 20px;
     position: absolute;

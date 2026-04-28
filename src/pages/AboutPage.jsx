@@ -1,5 +1,7 @@
 import "./styles/About.css";
 import { useTheme } from "../hooks/useTheme";
+import { AboutInfo } from "../components/Navigation/AboutInfo";
+import ProgressBar from "../components/Navigation/ProgressBar";
 
 export function AboutPage() {
   const { themColor, openTheme,isNavOpen } = useTheme();
@@ -29,45 +31,7 @@ export function AboutPage() {
       </p>
       <div className="about-main-content-container">
         <div className="about-info">
-          <div className={`about-info-holder ${isNavOpen ? "about-info-holder-closed" : ""}`}>
-            <div className="about-info-content">
-
-              <div className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}>
-                <h4>Date of Birth:</h4>
-                <span>September 21st, 1998</span>
-              </div>
-              <div className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}>
-                <h4>Website:</h4>
-                <span>www.example.com</span>
-              </div>
-              <div className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}>
-                <h4>Degree:</h4>
-                <span> Bachelor of Science (B.Sc) in Computer Science</span>
-              </div>
-              <div className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}>
-                <h4>City:</h4>
-                <span>Port Harcourt</span>
-              </div>
-            </div>
-            <div className="about-info-content">
-              <div className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}>
-                <h4>Age:</h4>
-                <span>27</span>
-              </div>
-              <div className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}>
-                <h4>Phone:</h4>
-                <span>+234 903 901 4066</span>
-              </div>
-              <div className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}>
-                <h4>Email:</h4>
-                <span>richardsunday0812@gmail.com</span>
-              </div>
-              <div className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}>
-                <h4>Freelance:</h4>
-                <span>Available for freelance work</span>
-              </div>
-            </div>
-          </div>
+          <AboutInfo openTheme={openTheme} isNavOpen={isNavOpen} />
 
           <div className="about-info-button">
             <button className={`about-button button-theme-color-${themColor} ${isNavOpen ? "about-button-closed" : ""}`}>
@@ -75,7 +39,12 @@ export function AboutPage() {
             </button>
           </div>
         </div>
-        <div className="about-interests"></div>
+        <div className="about-interests">
+          <ProgressBar title="HTML" level={90} themColor={themColor} />
+          <ProgressBar title="CSS" level={85} themColor={themColor} />
+          <ProgressBar title="JavaScript" level={70} themColor={themColor} />
+          <ProgressBar title="React" level={80} themColor={themColor} />
+        </div>
       </div>
     </div>
   );

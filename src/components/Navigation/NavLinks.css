@@ -215,3 +215,13 @@
     color: #2c2caa;
   }
 }
+
+@media (min-width: 1250px) {
+  .nav-links {
+    left: 0;
+  }
+
+  .nav-links-light {
+    left: 0;
+  }
+}

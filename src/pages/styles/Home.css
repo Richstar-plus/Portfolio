@@ -202,3 +202,63 @@
     background-color: #3da02a;
   }
 }
+
+@media (min-width: 1000px) {
+  .home-content-holder {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .home-content-wrapper {
+    width: 74%;
+  }
+
+  .home-picture-banner {
+    margin-top: 0;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero-container {
+    width: 100%;
+  }
+
+  .hero-border-right-style {
+    right: 0;
+  }
+
+  .hero-border-left-style {
+    left: -10px;
+  }
+
+  .main-body-holder-closed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 170px;
+    width: 80%;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .main-body-holder .home-title,
+  .main-body-holder-closed .home-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 88%;
+  }
+
+  .border-hide {
+    display: block;
+  }
+}
+
+@media (min-width: 1250px) {
+    .home-content-holder {
+    margin-left: 230px;
+  }
+}

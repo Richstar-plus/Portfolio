@@ -1,6 +1,7 @@
 import "./styles/Home.css";
 import heroImage from "../images/heroImage.png";
 import { useTheme } from "../hooks/useTheme";
+import { NavLink } from "react-router-dom";
 
 export function HomePage() {
   const { themColor, isNavOpen } = useTheme();
@@ -24,9 +25,11 @@ export function HomePage() {
           developing a robust e-commerce platform, I thrive on turning ideas
           into reality through code.
         </p>
-        <button className={`home-button button-theme-color-${themColor}`}>
-          More about me
-        </button>
+        <NavLink to="/about">
+          <button className={`home-button button-theme-color-${themColor}`}>
+            More about me
+          </button>
+        </NavLink>
       </div>
       <div className="home-picture-banner">
         <div

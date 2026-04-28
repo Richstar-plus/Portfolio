@@ -382,6 +382,14 @@
   .main-body-holder-closed .hero-border-right-style {
     right: -10px;
   }
+
+  .main-body-holder .home-title {
+    font-size: 30px;
+  }
+
+  .main-body-holder .home-title span {
+    font-size: 35px;
+  }
 }
 
 @media (min-width: 1250px) {

@@ -19,7 +19,7 @@
   width: 88%;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1000px) {
     .projects {
     margin-left: 200px;
   }

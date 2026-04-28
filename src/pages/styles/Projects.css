@@ -18,3 +18,9 @@
   line-height: 1.6;
   width: 88%;
 }
+
+@media (min-width: 1250px) {
+    .projects {
+    margin-left: 200px;
+  }
+}

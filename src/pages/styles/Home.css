@@ -13,36 +13,52 @@
 
   .home-content-holder {
     margin-left: 30px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-rows: 1fr 300px;
   }
 
   .main-body-holder-closed {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 40px;
     margin-top: 100px;
     font-family: "Poppins", sans-serif;
     margin-left: 170px;
-    width: 160px;
     padding: 10px;
     transition: all 0.3s ease;
   }
 
-  .main-body-holder .home-title,
-  .main-body-holder-closed .home-title {
+  .main-body-holder .home-title {
     font-size: 20px;
     margin-bottom: 20px;
-    width: 88%;
+    width: 100%;
   }
 
-  .main-body-holder .home-title span,
-  .main-body-holder-closed .home-title span {
+  .main-body-holder-closed .home-title {
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .main-body-holder .home-title span {
     font-family: "Pacifico", cursive;
     font-size: 15px;
     transition: color 0.5s ease;
   }
 
-  .main-body-holder h2,
-  .main-body-holder-closed h2 {
+  .main-body-holder-closed .home-title span {
+    font-family: "Pacifico", cursive;
+    font-size: 12px;
+    transition: color 0.5s ease;
+  }
+
+  .main-body-holder h2 {
     font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .main-body-holder-closed h2 {
+    font-size: 15px;
     margin-bottom: 20px;
   }
 
@@ -51,15 +67,26 @@
     transition: color 0.5s ease;
   }
 
-  .main-body-holder .home-description,
-  .main-body-holder-closed .home-description {
-    width: 88%;
-    font-size: 14px;
+  .home-content-wrapper {
+    margin-right: 20px;
+    padding: 10px;
+  }
+
+  .main-body-holder .home-description {
+    width: 100%;
+    font-size: 16px;
     margin-bottom: 20px;
     text-align: justify;
   }
 
-  .home-button {
+  .main-body-holder-closed .home-description {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .main-body-holder .home-button {
     padding: 10px 25px;
     color: white;
     border: none;
@@ -69,25 +96,64 @@
     transition: background-color 0.5s ease;
   }
 
+  .main-body-holder-closed .home-button {
+    padding: 3px 10px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 8px;
+    transition: background-color 0.5s ease;
+  }
+
   .home-picture-banner {
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-left: 20px;
+    height: 300px;
+  }
+
+  .main-body-holder-closed .home-picture-banner {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+    height: 150px;
   }
 
   .hero-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 230px;
+    width: 200px;
+    height: 100%;
+  }
+
+  .main-body-holder-closed .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
   }
 
   .hero-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .main-body-holder-closed .hero-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
   }
 
   .hero-border-right-style {
@@ -98,6 +164,17 @@
     position: absolute;
     right: 70px;
     top: 10px;
+    transition: border-color 0.5s ease;
+  }
+
+  .main-body-holder-closed .hero-border-right-style {
+    border-top: 4px solid;
+    border-right: 4px solid;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    top: 5px;
     transition: border-color 0.5s ease;
   }
 
@@ -112,6 +189,17 @@
     transition: border-color 0.5s ease;
   }
 
+  .main-body-holder-closed .hero-border-left-style {
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    bottom: -10px;
+    transition: border-color 0.5s ease;
+  }
+
   .border-hide {
     display: none;
   }
@@ -122,32 +210,32 @@
     border-color: rgb(255, 115, 0);
   }
 
-  .border-theme-color-default:hover {
-    border-color: rgba(192, 99, 22, 0.8);
+  .main-body-holder-closed .border-theme-color-default {
+    border-color: rgb(255, 115, 0);
   }
 
   .border-theme-color-red {
     border-color: #b32020;
   }
 
-  .border-theme-color-red:hover {
-    border-color: #8b1b1b;
+  .main-body-holder-closed .border-theme-color-red {
+    border-color: #b32020;
   }
 
   .border-theme-color-green {
     border-color: #3da02a;
   }
 
-  .border-theme-color-green:hover {
-    border-color: #2e6d1b;
+  .main-body-holder-closed .border-theme-color-green {
+    border-color: #3da02a;
   }
 
   .border-theme-color-blue {
     border-color: #2c2caa;
   }
 
-  .border-theme-color-blue:hover {
-    border-color: #1f1f6b;
+  .main-body-holder-closed .border-theme-color-blue {
+    border-color: #2c2caa;
   }
 
   .theme-color-default {
@@ -198,8 +286,39 @@
     background-color: #8b1b1b;
   }
 
+  .home-content-holder .button-theme-color-blue {
+    background-color: #2c2caa;
+  }
+
+  .home-content-holder .button-theme-color-blue:hover {
+    background-color: #1f1f6b;
+  }
+
   .home-content-holder .button-theme-color-green {
     background-color: #3da02a;
+  }
+
+  .home-content-holder .button-theme-color-green:hover {
+    background-color: #2e6d1b;
+  }
+}
+
+@media (min-width: 500px) {
+  .border-hide {
+    display: block;
+  }
+
+  .main-body-holder-closed .home-picture-banner {
+    height: 300px;
+  }
+
+  .main-body-holder-closed .hero-container {
+    width: 200px;
+  }
+
+  .main-body-holder-closed .home-button {
+    padding: 10px 25px;
+    font-size: 14px;
   }
 }
 
@@ -210,7 +329,7 @@
   }
 
   .home-content-wrapper {
-    width: 74%;
+    flex: 1;
   }
 
   .home-picture-banner {
@@ -255,10 +374,18 @@
   .border-hide {
     display: block;
   }
+
+  .main-body-holder-closed .hero-border-left-style {
+    left: -20px;
+  }
+
+  .main-body-holder-closed .hero-border-right-style {
+    right: -10px;
+  }
 }
 
 @media (min-width: 1250px) {
-    .home-content-holder {
+  .home-content-holder {
     margin-left: 230px;
   }
 }

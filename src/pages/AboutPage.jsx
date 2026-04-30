@@ -2,12 +2,15 @@ import "./styles/About.css";
 import { useTheme } from "../hooks/useTheme";
 import { AboutInfo } from "../components/Navigation/AboutInfo";
 import ProgressBar from "../components/Navigation/ProgressBar";
+import { Experience } from "../components/Experience";
 
 export function AboutPage() {
-  const { themColor, openTheme,isNavOpen } = useTheme();
+  const { themColor, openTheme, isNavOpen } = useTheme();
 
   return (
-    <div className={`about content-holder ${isNavOpen ? "about-content-holder-closed" : ""}`}>
+    <div
+      className={`about content-holder ${isNavOpen ? "about-content-holder-closed" : ""}`}
+    >
       <div className="about-title">
         <h1 className="page-title">
           About <span className={`theme-color-${themColor}`}>Me</span>
@@ -34,7 +37,9 @@ export function AboutPage() {
           <AboutInfo openTheme={openTheme} isNavOpen={isNavOpen} />
 
           <div className="about-info-button">
-            <button className={`about-button button-theme-color-${themColor} ${isNavOpen ? "about-button-closed" : ""}`}>
+            <button
+              className={`about-button button-theme-color-${themColor} ${isNavOpen ? "about-button-closed" : ""}`}
+            >
               Download CV
             </button>
           </div>
@@ -44,7 +49,10 @@ export function AboutPage() {
           <ProgressBar title="CSS" level={85} themColor={themColor} />
           <ProgressBar title="JavaScript" level={70} themColor={themColor} />
           <ProgressBar title="React" level={80} themColor={themColor} />
+          <ProgressBar title="Node.js" level={30} themColor={themColor} />
         </div>
+        <Experience title='Education' openTheme={openTheme} themColor={themColor} />
+        <Experience title='Experience' openTheme={openTheme} themColor={themColor} />
       </div>
     </div>
   );

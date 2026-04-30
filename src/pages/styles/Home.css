@@ -1,4 +1,4 @@
-@media ((min-width: 390px)) {
+@media ((min-width: 350px)) {
   .home {
     padding: 30px;
   }
@@ -20,11 +20,11 @@
 
   .main-body-holder-closed {
     display: grid;
-    grid-template-rows: 1fr 40px;
+    grid-template-rows: 1fr 30px;
     margin-top: 100px;
     font-family: "Poppins", sans-serif;
     margin-left: 170px;
-    padding: 10px;
+    padding: 5px;
     transition: all 0.3s ease;
   }
 
@@ -69,6 +69,11 @@
 
   .home-content-wrapper {
     margin-right: 20px;
+    padding: 10px;
+  }
+
+  .main-body-holder-closed .home-content-wrapper {
+    margin-right: 10px;
     padding: 10px;
   }
 

@@ -1,29 +1,91 @@
-
-@media (min-width: 390px) {
+@media (min-width: 350px) {
   /* Contact Page Styles */
   .contact {
     padding: 30px;
     font-family: "Poppins", sans-serif;
   }
-  
+
+  .contact-content-holder-closed {
+    overflow: hidden;
+  }
+
   .page-title {
     font-size: 32px;
     margin-bottom: 20px;
   }
-  
+
   .page-title span {
     transition: color 0.5s ease;
   }
-  
+
   .contact-content {
     font-size: 16px;
     line-height: 1.6;
-    width: 88%;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-info .contact-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+
+
+
+  .contact-icon-default {
+    color: rgb(255, 115, 0);
+    transition: color 0.3s ease;
+  }
+
+  .contact-icon-red {
+    color: #b32020;
+    transition: color 0.3s ease;
+  }
+
+  .contact-icon-green {
+    color: #1b8a1b;
+    transition: color 0.3s ease;
+  }
+
+  .contact-icon-blue {
+    color: #2c2caa;
+    transition: color 0.3s ease;
+  }
+}
+
+@media (min-width: 500px) {
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 }
 
 @media (min-width: 1000px) {
-    .contact {
+  .contact {
     margin-left: 200px;
   }
 }

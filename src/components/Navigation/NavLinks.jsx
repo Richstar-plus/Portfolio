@@ -23,7 +23,7 @@ export function NavLinks() {
       </div>
       <div className="links">
         <NavLink
-          to="/Portfolio"
+          to="/"
           className={({ isActive }) => (isActive ? "nav-link-active" : "")}
           onClick={() => setIsNavOpen(false)}
         >

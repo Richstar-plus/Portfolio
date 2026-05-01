@@ -31,7 +31,7 @@
   }
 
   .project-card {
-    background-color: #d3c3c383;
+    background-color: #d3c3c334;
     color: black;
     border-radius: 8px;
     padding: 20px;
@@ -42,7 +42,7 @@
   }
 
   .project-card-open {
-    background-color: #e0f7fa3a;
+    background-color: #e0f7fa0c;
     color: black;
   }
 

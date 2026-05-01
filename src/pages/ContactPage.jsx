@@ -28,7 +28,7 @@ export function ContactPage() {
               className={`contact-icon contact-icon-${themColor}`}
             />
             <h3>Phone</h3>
-            <p>+123 456 7890</p>
+            <p>+123 903 9014 066</p>
           </div>
 
           <div className={`contact-info-card ${openTheme ? `contact-info-card-dark` : "contact-info-card-light"}`}>
@@ -37,7 +37,7 @@ export function ContactPage() {
               className={`contact-icon contact-icon-${themColor}`}
             />
             <h3>Email</h3>
-            <p>example@example.com</p>
+            <p>richardsunday0812@gmail.com</p>
           </div>
 
           <div className={`contact-info-card ${openTheme ? `contact-info-card-dark` : "contact-info-card-light"}`}>
@@ -50,7 +50,12 @@ export function ContactPage() {
           </div>
 
         </div>
-        <div className="contact-form-container"></div>
+        <div className="contact-form-container">
+          <h2 className={`contact-form-title contact-form-title-${themColor}`}>
+            SEND ME A MESSAGE
+          </h2>
+          <p>I am very responsive to messages.</p>
+        </div>
       </div>
     </div>
   );

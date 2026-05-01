@@ -1,11 +1,7 @@
 import "./styles/Contact.css";
 import { useTheme } from "../hooks/useTheme";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPhone,
-  faEnvelope,
-  faMapMarkerAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { ContactInfo } from "../components/Navigation/ContactInfo";
+
 
 export function ContactPage() {
   const { themColor, openTheme, isNavOpen } = useTheme();
@@ -26,40 +22,7 @@ export function ContactPage() {
       </p>
 
       <div className="contact-main-container">
-        <div className="contact-info">
-          <div
-            className={`contact-info-card ${openTheme ? `contact-info-card-dark` : "contact-info-card-light"}`}
-          >
-            <FontAwesomeIcon
-              icon={faPhone}
-              className={`contact-icon contact-icon-${themColor}`}
-            />
-            <h3>Phone</h3>
-            <p>+123 903 9014 066</p>
-          </div>
-
-          <div
-            className={`contact-info-card ${openTheme ? `contact-info-card-dark` : "contact-info-card-light"}`}
-          >
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className={`contact-icon contact-icon-${themColor}`}
-            />
-            <h3>Email</h3>
-            <p>richardsunday0812@gmail.com</p>
-          </div>
-
-          <div
-            className={`contact-info-card ${openTheme ? `contact-info-card-dark` : "contact-info-card-light"}`}
-          >
-            <FontAwesomeIcon
-              icon={faMapMarkerAlt}
-              className={`contact-icon contact-icon-${themColor}`}
-            />
-            <h3>Location</h3>
-            <p>123 Main Street, City, Country</p>
-          </div>
-        </div>
+        <ContactInfo openTheme={openTheme} themColor={themColor} />
         <div
           className={`contact-form-container ${openTheme ? `contact-form-container-dark` : "contact-form-container-light"}`}
         >

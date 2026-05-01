@@ -1,26 +1,91 @@
-/* Projects Page Styles */
-.projects {
-  padding: 30px;
-  font-family: "Poppins", sans-serif;
+@media (min-width: 350px) {
+  /* Projects Page Styles */
+  .projects {
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .nav-open {
+    overflow: hidden;
+  }
+
+  .page-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .page-title span {
+    transition: color 0.5s ease;
+  }
+
+  .projects-content {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .project-content-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .project-card {
+    background-color: #d3c3c383;
+    color: black;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .project-card-open {
+    background-color: #e0f7fa3a;
+    color: black;
+  }
+
+  .project-card h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .project-card-open h2 {
+    color: #ffffff;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
 }
 
-.page-title {
-  font-size: 32px;
-  margin-bottom: 20px;
+@media (min-width: 500px) {
+  .project-content-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.page-title span {
-  transition: color 0.5s ease;
-}
-
-.projects-content {
-  font-size: 16px;
-  line-height: 1.6;
-  width: 88%;
+@media (min-width: 800px) {
+  .project-content-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 1000px) {
-    .projects {
+  .projects {
     margin-left: 200px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .project-content-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

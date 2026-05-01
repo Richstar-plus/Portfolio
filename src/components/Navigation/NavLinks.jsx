@@ -10,7 +10,7 @@ import {
 import { useTheme } from "../../hooks/useTheme";
 
 export function NavLinks() {
-  const { isNavOpen, openTheme, themColor } = useTheme();
+  const { isNavOpen, openTheme, themColor, setIsNavOpen } = useTheme();
 
   return (
     <div
@@ -25,6 +25,7 @@ export function NavLinks() {
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "nav-link-active" : "")}
+          onClick={() => setIsNavOpen(false)}
         >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faHouse} /> Home
@@ -34,6 +35,7 @@ export function NavLinks() {
         <NavLink
           to="/about"
           className={({ isActive }) => (isActive ? "nav-link-active" : "")}
+          onClick={() => setIsNavOpen(false)}
         >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faUser} /> About
@@ -43,6 +45,7 @@ export function NavLinks() {
         <NavLink
           to="/projects"
           className={({ isActive }) => (isActive ? "nav-link-active" : "")}
+          onClick={() => setIsNavOpen(false)}
         >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faBriefcase} /> Projects
@@ -52,6 +55,7 @@ export function NavLinks() {
         <NavLink
           to="/contact"
           className={({ isActive }) => (isActive ? "nav-link-active" : "")}
+          onClick={() => setIsNavOpen(false)}
         >
           <div className={`link-holder link-holder-${themColor}`}>
             <FontAwesomeIcon icon={faEnvelope} /> Contact

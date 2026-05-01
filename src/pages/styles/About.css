@@ -1,8 +1,12 @@
 /* About Page Styles */
-@media (min-width: 390px) {
+@media (min-width: 350px) {
   .about {
     padding: 30px;
     font-family: "Poppins", sans-serif;
+  }
+
+  .about-content-holder-closed{
+    overflow: hidden;
   }
 
   .about-content-holder-closed .page-title {
@@ -294,12 +298,17 @@
   }
 
   .about-main-content-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr;
   }
 
   .about-interests {
     margin-top: 40px;
+  }
+}
+
+@media (min-width: 600px) {
+  .about-main-content-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

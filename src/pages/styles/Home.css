@@ -1,7 +1,7 @@
 @media ((min-width: 350px)) {
   .home {
     padding: 30px;
-    background-color: black;
+    background-color: rgb(17, 17, 17);
   }
 
   .main-body-holder {
@@ -10,7 +10,7 @@
     margin-top: 50px;
     font-family: "Poppins", sans-serif;
     transition: margin-left 0.3s ease;
-    background-color: black;
+    background-color: rgb(17, 17, 17);
     height: 200vh;
   }
 

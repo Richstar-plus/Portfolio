@@ -63,14 +63,19 @@ export function AboutPage() {
           <ProgressBar title="React" level={80} themColor={themColor} />
           <ProgressBar title="Node.js" level={30} themColor={themColor} />
         </div>
-        <Experience title='Education' openTheme={openTheme} themColor={themColor} />
-        <Experience title='Experience' openTheme={openTheme} themColor={themColor} />
+        <Experience
+          title="Education"
+          openTheme={openTheme}
+          themColor={themColor}
+        />
+        <Experience
+          title="Experience"
+          openTheme={openTheme}
+          themColor={themColor}
+        />
       </div>
 
-      <CVModal
-        isOpen={isCVModalOpen}
-        onClose={handleCloseCVModal}
-      />
+      <CVModal isOpen={isCVModalOpen} onClose={handleCloseCVModal} />
     </div>
   );
 }

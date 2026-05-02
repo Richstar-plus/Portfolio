@@ -21,7 +21,6 @@ export function Experience({ title, openTheme, themColor }) {
             ></div>
             <div className="experience-content">
               <p className="date">{experience.date}</p>
-              <p className="experience-category">{experience.category}</p>
               <h3 className="experience-title">{experience.title}</h3>
               <p className="experience-description">{experience.description}</p>
             </div>

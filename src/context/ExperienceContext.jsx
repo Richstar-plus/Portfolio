@@ -6,31 +6,39 @@ export function ExperienceProvider({ children }) {
   const [experiences, setExperiences] = useState([
     {
       id: 1,
-      date: "2020 - 2021",
-      title: "Web Development Course",
+      date: "2019 - 2023",
+      title: "Bachelor's of Science (BSc) in Computer Science",
       description:
-        "Completed a comprehensive web development course covering HTML, CSS, and JavaScript.",
+        "Ignatius Ajuru University of Education, Rivers State",
       category: "education",
     },
     {
       id: 2,
-      date: "2021 - 2022",
+      date: "2023 - 2024",
+      title: "Frontend Development",
+      description:
+        "Specialized in building responsive and interactive user interfaces using HTML, CSS, and JavaScript.",
+      category: "education",
+    },
+    {
+      id: 3,
+      date: "2024 - 2025",
       title: "React Development",
       description:
         "Advanced React development with hooks, context API, and modern JavaScript patterns.",
       category: "education",
     },
     {
-      id: 3,
-      date: "2022 - 2023",
-      title: "Full Stack Development",
+      id: 4,
+      date: "2024 - present",
+      title: "Frontend Development",
       description:
-        "Built full-stack applications using React, Node.js, and various databases.",
+        "Created responsive and user-friendly interfaces for various web applications using React and javaScript.",
       category: "experience",
     },
     {
-      id: 4,
-      date: "2023 - Present",
+      id: 5,
+      date: "2025 - present",
       title: "Portfolio Development",
       description:
         "Created and maintained personal portfolio showcasing various projects and skills.",

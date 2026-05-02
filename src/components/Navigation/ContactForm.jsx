@@ -19,8 +19,15 @@ export function ContactForm({ openTheme, themColor }) {
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="input-container">
             <div className="input">
-              <input type="text" name="name" placeholder="Your Name" required />
               <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                id="email"
                 type="email"
                 name="email"
                 placeholder="Your Email"
@@ -29,6 +36,7 @@ export function ContactForm({ openTheme, themColor }) {
             </div>
             <div className="input-subject">
               <input
+                id="subject"
                 type="text"
                 name="subject"
                 placeholder="Subject"
@@ -37,6 +45,7 @@ export function ContactForm({ openTheme, themColor }) {
             </div>
             <div className="input-text">
               <textarea
+                id="message"
                 name="message"
                 placeholder="Your Message"
                 required
@@ -47,6 +56,7 @@ export function ContactForm({ openTheme, themColor }) {
 
           <ValidationError prefix="Name" field="name" errors={state.errors} />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <ValidationError prefix="Subject" field="subject" errors={state.errors} />
           <ValidationError
             prefix="Message"
             field="message"
@@ -65,6 +75,12 @@ export function ContactForm({ openTheme, themColor }) {
         {state.succeeded && (
           <p className="contact-form-success">
             Thanks for your message! I will get back to you soon.
+          </p>
+        )}
+
+        {state.errors && state.errors.length > 0 && (
+          <p className="contact-form-error">
+            There was an error sending your message. Please try again.
           </p>
         )}
       </div>

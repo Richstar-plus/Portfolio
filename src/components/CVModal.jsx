@@ -57,7 +57,7 @@ export function CVModal({ isOpen, onClose }) {
 
           <div className="cv-main-content">
             <div className="cv-info-section">
-              <AboutInfo  isNavOpen={false} />
+              <AboutInfo isNavOpen={false} />
             </div>
 
             <div className="cv-skills-section">

@@ -1,4 +1,4 @@
-export function AboutInfo({openTheme, isNavOpen }) {
+export function AboutInfo({ openTheme, isNavOpen }) {
   return (
     <div
       className={`about-info-holder ${isNavOpen ? "about-info-holder-closed" : ""}`}
@@ -34,7 +34,7 @@ export function AboutInfo({openTheme, isNavOpen }) {
           className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}
         >
           <h4>Age:</h4>
-          <span>27</span>
+          <span>28</span>
         </div>
         <div
           className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}

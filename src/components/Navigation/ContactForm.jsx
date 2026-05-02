@@ -56,7 +56,11 @@ export function ContactForm({ openTheme, themColor }) {
 
           <ValidationError prefix="Name" field="name" errors={state.errors} />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
-          <ValidationError prefix="Subject" field="subject" errors={state.errors} />
+          <ValidationError
+            prefix="Subject"
+            field="subject"
+            errors={state.errors}
+          />
           <ValidationError
             prefix="Message"
             field="message"

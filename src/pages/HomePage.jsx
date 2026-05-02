@@ -25,7 +25,7 @@ export function HomePage() {
           developing a robust e-commerce platform, I thrive on turning ideas
           into reality through code.
         </p>
-        <NavLink to="/about">
+        <NavLink to="/Portfolio/about" end>
           <button className={`home-button button-theme-color-${themColor}`}>
             More about me
           </button>

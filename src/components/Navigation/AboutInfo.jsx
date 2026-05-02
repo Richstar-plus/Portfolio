@@ -8,7 +8,7 @@ export function AboutInfo({ openTheme, isNavOpen }) {
           className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}
         >
           <h4>Date of Birth:</h4>
-          <span>September 21st, 1998</span>
+          <span>September 21st, 1997</span>
         </div>
         <div
           className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}

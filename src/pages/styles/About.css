@@ -342,6 +342,28 @@
   overflow-y: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   position: relative;
+  color: #000;
+}
+
+.cv-modal-content,
+.cv-modal-content * {
+  color: #000 !important;
+}
+
+.cv-modal-content .theme-color-default {
+  color: rgb(255, 115, 0) !important;
+}
+
+.cv-modal-content .theme-color-red {
+  color: #b32020 !important;
+}
+
+.cv-modal-content .theme-color-green {
+  color: #3da02a !important;
+}
+
+.cv-modal-content .theme-color-blue {
+  color: #2c2caa !important;
 }
 
 .cv-modal-header {

@@ -4,7 +4,8 @@ import ProgressBar from "./Navigation/ProgressBar";
 import { Experience } from "./Experience";
 
 export function CVModal({ isOpen, onClose }) {
-  const { themColor, openTheme } = useTheme();
+  const { themColor } = useTheme();
+  const modalOpenTheme = true;
 
   if (!isOpen) return null;
 
@@ -77,12 +78,12 @@ export function CVModal({ isOpen, onClose }) {
             <div className="cv-experience-section">
               <Experience
                 title="Education"
-                openTheme={openTheme}
+                openTheme={modalOpenTheme}
                 themColor={themColor}
               />
               <Experience
                 title="Experience"
-                openTheme={openTheme}
+                openTheme={modalOpenTheme}
                 themColor={themColor}
               />
             </div>

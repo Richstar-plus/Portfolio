@@ -7,7 +7,7 @@ body {
 
 .body {
   display: flex;
-  min-height: 100vh;
+  min-height: 200vh;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

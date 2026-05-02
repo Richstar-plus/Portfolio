@@ -317,3 +317,206 @@
     margin-left: 200px;
   }
 }
+
+/* CV Modal Styles */
+.cv-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.cv-modal-content {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 800px;
+  max-height: 90vh;
+  width: 100%;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.cv-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  background-color: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+}
+
+.cv-modal-title {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.cv-modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cv-print-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cv-print-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cv-close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.cv-close-button:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.cv-modal-body {
+  padding: 20px;
+}
+
+.cv-section {
+  margin-bottom: 30px;
+}
+
+.cv-section-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.cv-style1 {
+  position: absolute;
+  width: 60px;
+  border-top: 3px solid;
+  bottom: 4px;
+  transition: border-color 0.5s ease;
+}
+
+.cv-style2 {
+  position: absolute;
+  width: 40px;
+  border-top: 3px solid;
+  bottom: -1px;
+  transition: border-color 0.5s ease;
+}
+
+.cv-subtitle {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.cv-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.cv-main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.cv-info-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cv-skills-section {
+  margin-top: 20px;
+}
+
+.cv-skills-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.cv-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cv-experience-section {
+  margin-top: 20px;
+}
+
+.cv-modal-footer {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  background-color: #f8f9fa;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+}
+
+.cv-print-instruction {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Print Styles */
+@media print {
+  .cv-modal-overlay,
+  .cv-modal-header,
+  .cv-modal-footer,
+  .cv-close-button,
+  .cv-print-button {
+    display: none !important;
+  }
+
+  .cv-modal-content {
+    box-shadow: none;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .cv-modal-body {
+    padding: 0;
+  }
+
+  .cv-section {
+    page-break-inside: avoid;
+  }
+
+  .experience-details {
+    page-break-inside: avoid;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .cv-main-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}

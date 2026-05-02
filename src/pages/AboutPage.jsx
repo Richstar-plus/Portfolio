@@ -1,11 +1,22 @@
 import "./styles/About.css";
+import { useState } from "react";
 import { useTheme } from "../hooks/useTheme";
 import { AboutInfo } from "../components/Navigation/AboutInfo";
 import ProgressBar from "../components/Navigation/ProgressBar";
 import { Experience } from "../components/Experience";
+import { CVModal } from "../components/CVModal";
 
 export function AboutPage() {
   const { themColor, openTheme, isNavOpen } = useTheme();
+  const [isCVModalOpen, setIsCVModalOpen] = useState(false);
+
+  const handleDownloadCV = () => {
+    setIsCVModalOpen(true);
+  };
+
+  const handleCloseCVModal = () => {
+    setIsCVModalOpen(false);
+  };
 
   return (
     <div
@@ -39,6 +50,7 @@ export function AboutPage() {
           <div className="about-info-button">
             <button
               className={`about-button button-theme-color-${themColor} ${isNavOpen ? "about-button-closed" : ""}`}
+              onClick={handleDownloadCV}
             >
               Download CV
             </button>
@@ -54,6 +66,11 @@ export function AboutPage() {
         <Experience title='Education' openTheme={openTheme} themColor={themColor} />
         <Experience title='Experience' openTheme={openTheme} themColor={themColor} />
       </div>
+
+      <CVModal
+        isOpen={isCVModalOpen}
+        onClose={handleCloseCVModal}
+      />
     </div>
   );
 }

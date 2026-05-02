@@ -25,6 +25,7 @@ export function NavLinks() {
         <NavLink
           to="/Portfolio/"
           className={({ isActive }) => (isActive ? "nav-link-active" : "")}
+          end
           onClick={() => setIsNavOpen(false)}
         >
           <div className={`link-holder link-holder-${themColor}`}>
@@ -33,7 +34,7 @@ export function NavLinks() {
         </NavLink>
 
         <NavLink
-          to="/about"
+          to="/Portfolio/about"
           className={({ isActive }) => (isActive ? "nav-link-active" : "")}
           onClick={() => setIsNavOpen(false)}
         >
@@ -43,7 +44,7 @@ export function NavLinks() {
         </NavLink>
 
         <NavLink
-          to="/projects"
+          to="/Portfolio/projects"
           className={({ isActive }) => (isActive ? "nav-link-active" : "")}
           onClick={() => setIsNavOpen(false)}
         >
@@ -53,7 +54,7 @@ export function NavLinks() {
         </NavLink>
 
         <NavLink
-          to="/contact"
+          to="/Portfolio/contact"
           className={({ isActive }) => (isActive ? "nav-link-active" : "")}
           onClick={() => setIsNavOpen(false)}
         >

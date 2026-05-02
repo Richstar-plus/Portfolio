@@ -13,9 +13,9 @@ function App() {
           <Layout>
             <Routes>
               <Route path="/Portfolio/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/projects" element={<ProjectsPage />} />
-              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/Portfolio/about" element={<AboutPage />} />
+              <Route path="/Portfolio/projects" element={<ProjectsPage />} />
+              <Route path="/Portfolio/contact" element={<ContactPage />} />
             </Routes>
           </Layout>
         </BrowserRouter>

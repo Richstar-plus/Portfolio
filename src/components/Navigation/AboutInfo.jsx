@@ -14,7 +14,7 @@ export function AboutInfo({ openTheme, isNavOpen }) {
           className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}
         >
           <h4>Website:</h4>
-          <span>www.example.com</span>
+          <span>https://richstar-plus.github.io/Portfolio/</span>
         </div>
         <div
           className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}

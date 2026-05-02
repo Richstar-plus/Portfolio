@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider, ExperienceProvider } from "./context";
+import { ThemeProvider } from "./context";
+import { ExperienceProvider } from "./context/ExperienceContext";
 import { Layout } from "./components/Layout";
 import { HomePage, AboutPage, ProjectsPage, ContactPage } from "./pages";
 

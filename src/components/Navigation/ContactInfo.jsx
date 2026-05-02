@@ -37,7 +37,7 @@ export function ContactInfo({ openTheme, themColor }) {
           className={`contact-icon contact-icon-${themColor}`}
         />
         <h3>Location</h3>
-        <p>123 Main Street, City, Country</p>
+        <p>Port Harcourt, Nigeria</p>
       </div>
     </div>
   );

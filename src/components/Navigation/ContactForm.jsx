@@ -6,7 +6,9 @@ export function ContactForm({ openTheme, themColor }) {
   return (
     <div
       className={`contact-form-container ${
-        openTheme ? `contact-form-container-dark` : "contact-form-container-light"
+        openTheme
+          ? `contact-form-container-dark`
+          : "contact-form-container-light"
       }`}
     >
       <h2 className={`contact-form-title contact-form-title-${themColor}`}>
@@ -18,10 +20,20 @@ export function ContactForm({ openTheme, themColor }) {
           <div className="input-container">
             <div className="input">
               <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
             </div>
             <div className="input-subject">
-              <input type="text" name="subject" placeholder="Subject" required />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
             </div>
             <div className="input-text">
               <textarea
@@ -35,7 +47,11 @@ export function ContactForm({ openTheme, themColor }) {
 
           <ValidationError prefix="Name" field="name" errors={state.errors} />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
-          <ValidationError prefix="Message" field="message" errors={state.errors} />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
 
           <button
             type="submit"

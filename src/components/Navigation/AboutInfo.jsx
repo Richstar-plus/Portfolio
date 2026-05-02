@@ -28,7 +28,20 @@ export function AboutInfo({ openTheme, isNavOpen }) {
           <h4>City:</h4>
           <span>Port Harcourt</span>
         </div>
+        <div
+          className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}
+        >
+          <h4>Marital Status:</h4>
+          <span>Single</span>
+        </div>
+                <div
+          className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}
+        >
+          <h4>LGA:</h4>
+          <span>Oruk Anam</span>
+        </div>
       </div>
+
       <div className="about-info-content">
         <div
           className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}
@@ -53,6 +66,18 @@ export function AboutInfo({ openTheme, isNavOpen }) {
         >
           <h4>Freelance:</h4>
           <span>Available for freelance work</span>
+        </div>
+        <div
+          className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}
+        >
+          <h4>Sex:</h4>
+          <span>Male</span>
+        </div>
+                <div
+          className={`about-info-details ${openTheme ? "about-info-details-dark" : ""}`}
+        >
+          <h4>State:</h4>
+          <span>Akwa Ibom</span>
         </div>
       </div>
     </div>

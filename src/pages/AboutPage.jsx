@@ -23,6 +23,15 @@ export function AboutPage() {
       className={`about content-holder ${isNavOpen ? "about-content-holder-closed" : ""}`}
     >
       <div className="about-title">
+
+        <div className="cv-modal-header print-header" style={{ display: "none" }}>
+          <h1 className="cv-modal-title">
+            Richard Sunday -{" "}
+            <span className={`theme-color-${themColor}`}>Web Developer</span>
+          </h1>
+          <h5>Curriculum Vitae</h5>
+        </div>
+
         <h1 className="page-title">
           About <span className={`theme-color-${themColor}`}>Me</span>
         </h1>

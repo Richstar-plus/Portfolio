@@ -380,6 +380,7 @@
   font-size: 24px;
   margin: 0;
   font-weight: 600;
+  color: #333;
 }
 
 .cv-modal-actions {
@@ -510,10 +511,27 @@
 /* Print Styles */
 @media print {
   .cv-modal-overlay,
-  .cv-modal-header,
   .cv-modal-footer,
   .cv-close-button,
   .cv-print-button {
+    display: none !important;
+  }
+
+  .page-title {
+    display: none !important;
+  }
+
+  .print-header {
+    display: block !important;
+    padding: 0 0 20px 0 !important;
+  }
+
+  .about-button {
+    display: none !important;
+  }
+
+  .hamburger,
+  .hamburger * {
     display: none !important;
   }
 

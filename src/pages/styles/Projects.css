@@ -31,8 +31,8 @@
   }
 
   .project-card {
-    background-color: #d3c3c334;
-    color: black;
+    background-color: #e0f7fa0c ;
+    color: white;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -42,8 +42,8 @@
   }
 
   .project-card-open {
-    background-color: #e0f7fa0c;
-    color: black;
+    background-color: #d3c3c334;
+    color: white;
   }
 
   .project-card h2 {
@@ -52,7 +52,7 @@
   }
 
   .project-card-open h2 {
-    color: #ffffff;
+    color: #000;
   }
 
   .project-card img {

@@ -451,13 +451,13 @@
 .cv-subtitle {
   font-size: 20px;
   margin: 15px 0;
-  color: #555;
+  color: #000000;
 }
 
 .cv-description {
   font-size: 16px;
   line-height: 1.6;
-  color: #666;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -503,7 +503,7 @@
 
 .cv-print-instruction {
   margin: 0;
-  color: #666;
+  color: #000000;
   font-size: 14px;
   font-style: italic;
 }
@@ -532,6 +532,10 @@
 
   .hamburger,
   .hamburger * {
+    display: none !important;
+  }
+
+  .settings {
     display: none !important;
   }
 

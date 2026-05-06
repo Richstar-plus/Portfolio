@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -8,19 +8,25 @@ body {
 .body {
   display: flex;
   min-height: 200vh;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .theme-dark {
-  background-color: rgb(17, 17, 17);
-  color: white;
-  transition: background-color 0.3s ease, color 0.5s ease;
+  background-color: rgb(243, 255, 255);
+  color: black;
+  transition:
+    background-color 0.3s ease,
+    color 0.5s ease;
 }
 
 .theme-light {
-  background-color: rgb(243, 255, 255);
-  color: black;
-  transition: background-color 0.3s ease, color 0.5s ease;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  transition:
+    background-color 0.3s ease,
+    color 0.5s ease;
 }
 
 .main-body {

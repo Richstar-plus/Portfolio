@@ -9,8 +9,8 @@
 }
 
 .settings .settings-theme {
-  color: white;
-  background-color: rgba(150, 150, 150, 0.123);
+  color: #000;
+  background-color: rgba(150, 150, 150, 0.308);
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -24,8 +24,8 @@
 }
 
 .settings-theme-dark {
-  color: rgb(0, 0, 0);
-  background-color: rgba(150, 150, 150, 0.308);
+  color: white;
+  background-color: rgba(150, 150, 150, 0.123);
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -46,8 +46,8 @@
 }
 
 .gear-holder {
-  color: white;
-  background-color: rgba(150, 150, 150, 0.123);
+  color: rgb(0, 0, 0);
+  background-color: rgba(150, 150, 150, 0.308);
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -61,8 +61,8 @@
 }
 
 .gear-holder-dark {
-  color: rgb(0, 0, 0);
-  background-color: rgba(150, 150, 150, 0.308);
+  color: white;
+  background-color: rgba(150, 150, 150, 0.123);
   height: 35px;
   width: 35px;
   border-radius: 50%;

@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "./context";
+import { ThemeProvider } from "./context/ThemeContext";
 import { ExperienceProvider } from "./context/ExperienceContext";
 import { Layout } from "./components/Layout";
 import { HomePage, AboutPage, ProjectsPage, ContactPage } from "./pages";
